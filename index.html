@@ -1,1 +1,91 @@
-teste
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Pereira | Portfólio WDD231</title>
+  <meta name="description" content="Página inicial do portfólio de Pedro Pereira, estudante de desenvolvimento web na BYU-Idaho.">
+  <meta name="author" content="Pedro Pereira">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/maior.css">
+
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+  <script src="scripts/curso.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <img src="imagens/logo.svg" alt="Logotipo de Pedro Pereira" width="1" height="1">
+    <span>Pedro Pereira</span>
+    <button id="botao-de-nav" class="hamburger" aria-label="Abrir menu de navegação"></button>
+  </header>
+
+  <nav id="barra-navegacao" class="navegacao">
+    <ul>
+      <li class="atual"><a href="index.html">Início</a></li>
+      <li><a href="camara/index.html">Projeto da Câmara</a></li>
+      <li><a href="final/index.html">Projeto Final</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Página Inicial</h1>
+
+    <div class="grade-topo">
+      <section class="cartao sobre-mim">
+        <h2>Sobre Mim</h2>
+        <div class="cartao-corpo">
+          <p>
+            Meu nome é Pedro Pereira e sou estudante de Desenvolvimento Web na BYU-Idaho,
+            morando no Rio de Janeiro. Estou cursando o certificado em Programação de
+            Computadores e Web, aprendendo a construir sites acessíveis, responsivos e
+            bem estruturados usando HTML, CSS e JavaScript. Este site reúne os projetos
+            que venho desenvolvendo ao longo do curso.
+          </p>
+        </div>
+      </section>
+
+      <section class="cartao">
+        <h2>Foto do Estudante</h2>
+        <div class="foto-estudante">
+          <img src="imagens/foto-pedro.jpg" alt="Foto de Pedro Pereira" class="avatar">
+        </div>
+      </section>
+    </div>
+
+    <section class="cartao">
+      <h2>Cursos de Certificado Web</h2>
+      <div class="cartao-corpo" style="padding: 0;">
+        <div class="filtros">
+          <button class="filtro-btn ativo" data-filtro="Todos">Todos</button>
+          <button class="filtro-btn" data-filtro="CSE">CSE</button>
+          <button class="filtro-btn" data-filtro="WDD">WDD</button>
+        </div>
+        <div id="lista-cursos" class="lista-cursos"></div>
+        <p id="total-creditos" class="total-creditos"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="redes-sociais">
+      <a href="https://github.com/pedrothv" target="_blank" rel="noopener">
+        <img src="imagens/github.svg" alt="GitHub de Pedro Pereira" width="24" height="24">
+      </a>
+      <a href="https://www.linkedin.com/in/pedro-pereira-314209215/" target="_blank" rel="noopener">
+        <img src="imagens/linkedin.svg" alt="LinkedIn de Pedro Pereira" width="24" height="24">
+      </a>
+    </div>
+    <p>&copy; <span id="anoAtual"></span> Pedro Pereira &bull; Rio de Janeiro, Brasil</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
+
+</body>
+</html>
