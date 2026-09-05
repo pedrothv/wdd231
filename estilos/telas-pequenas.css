@@ -11,12 +11,14 @@
   --borda: #dbe3ef;
   --azul-marinho-claro: #23364d;
   --creme-concluido: #fff8ea;
+  --branco-suave: rgba(255, 255, 255, 0.85);
+  --sombra-cor: rgba(16, 36, 62, 0.08);
 
   --fonte-titulo: "Space Grotesk", sans-serif;
   --fonte-corpo: "Source Sans 3", sans-serif;
 
   --raio: 10px;
-  --sombra: 0 4px 14px rgba(16, 36, 62, 0.08);
+  --sombra: 0 4px 14px var(--sombra-cor);
 }
 
 *,
@@ -101,7 +103,7 @@ header span {
 .navegacao {
   display: none;
   background-color: var(--azul-marinho);
-  color: #ffffff;
+  color: var(--branco);
 }
 
 .navegacao.exibir {
@@ -272,7 +274,7 @@ main > h1 {
 
 footer {
   background-color: var(--azul-marinho);
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--branco-suave);
   padding: 1.75rem 1rem 1.5rem;
   text-align: center;
 }
@@ -290,7 +292,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--branco-suave);
   border-radius: 50%;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
