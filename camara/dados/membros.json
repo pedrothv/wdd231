@@ -1,0 +1,76 @@
+{
+  "membros": [
+    {
+      "nome": "Sucos Tropicais Ipanema",
+      "endereco": "Rua Visconde de Pirajá, 300 - Ipanema, Rio de Janeiro - RJ",
+      "telefone": "(21) 3222-1010",
+      "site": "https://www.sucostropicaisipanema-exemplo.com.br",
+      "imagem": "negocio-sucos.svg",
+      "nivel": 2,
+      "descricao": "Loja de sucos naturais e vitaminas com frutas frescas do Rio de Janeiro."
+    },
+    {
+      "nome": "Livraria Página Carioca",
+      "endereco": "Rua do Catete, 88 - Catete, Rio de Janeiro - RJ",
+      "telefone": "(21) 2555-3344",
+      "site": "https://www.paginacarioca-exemplo.com.br",
+      "imagem": "negocio-livraria.svg",
+      "nivel": 3,
+      "descricao": "Livraria independente especializada em autores brasileiros."
+    },
+    {
+      "nome": "Contabilidade Andrade & Souza",
+      "endereco": "Av. Rio Branco, 156, sala 802 - Centro, Rio de Janeiro - RJ",
+      "telefone": "(21) 3200-7788",
+      "site": "https://www.andradesouzacontabil-exemplo.com.br",
+      "imagem": "negocio-contabilidade.svg",
+      "nivel": 1,
+      "descricao": "Escritório de contabilidade para pequenas e médias empresas."
+    },
+    {
+      "nome": "Padaria Doce Manhã",
+      "endereco": "Rua Voluntários da Pátria, 190 - Botafogo, Rio de Janeiro - RJ",
+      "telefone": "(21) 2539-4477",
+      "site": "https://www.docemanha-exemplo.com.br",
+      "imagem": "negocio-padaria.svg",
+      "nivel": 1,
+      "descricao": "Padaria de bairro com pães artesanais e café da manhã completo."
+    },
+    {
+      "nome": "Oficina Mecânica Zona Norte",
+      "endereco": "Av. Dom Hélder Câmara, 3020 - Cachambi, Rio de Janeiro - RJ",
+      "telefone": "(21) 2591-6655",
+      "site": "https://www.oficinazonanorte-exemplo.com.br",
+      "imagem": "negocio-oficina.svg",
+      "nivel": 2,
+      "descricao": "Manutenção automotiva completa com atendimento rápido."
+    },
+    {
+      "nome": "Rio Mar Agência de Turismo",
+      "endereco": "Av. Atlântica, 1702 - Copacabana, Rio de Janeiro - RJ",
+      "telefone": "(21) 2547-2233",
+      "site": "https://www.riomarturismo-exemplo.com.br",
+      "imagem": "negocio-turismo.svg",
+      "nivel": 3,
+      "descricao": "Passeios e pacotes turísticos pela cidade do Rio de Janeiro."
+    },
+    {
+      "nome": "Estúdio Yoga Lagoa",
+      "endereco": "Av. Epitácio Pessoa, 1400 - Lagoa, Rio de Janeiro - RJ",
+      "telefone": "(21) 2274-9900",
+      "site": "https://www.yogalagoa-exemplo.com.br",
+      "imagem": "negocio-yoga.svg",
+      "nivel": 1,
+      "descricao": "Aulas de yoga e meditação com vista para a Lagoa Rodrigo de Freitas."
+    },
+    {
+      "nome": "Ateliê Artesanato Carioca",
+      "endereco": "Rua Dias Ferreira, 45 - Leblon, Rio de Janeiro - RJ",
+      "telefone": "(21) 3322-8811",
+      "site": "https://www.artesanatocarioca-exemplo.com.br",
+      "imagem": "negocio-artesanato.svg",
+      "nivel": 2,
+      "descricao": "Peças artesanais feitas por artistas locais do Rio de Janeiro."
+    }
+  ]
+}
