@@ -48,4 +48,28 @@
   footer {
     padding: 2rem 2rem;
   }
+
+  .hero {
+    margin: -2rem -2rem 1.5rem;
+  }
+
+  .hero-imagem {
+    height: 360px;
+  }
+
+  .hero-conteudo {
+    padding: 2rem;
+  }
+
+  .hero-conteudo h1 {
+    font-size: 2.2rem;
+  }
+
+  .lista-eventos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .lista-eventos li {
+    flex-direction: column;
+  }
 }

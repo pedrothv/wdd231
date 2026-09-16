@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Câmara de Comércio do Rio de Janeiro | Página Inicial</title>
+  <meta name="description" content="Página inicial da Câmara de Comércio do Rio de Janeiro: eventos, previsão do tempo e empresas em destaque.">
+  <meta name="author" content="Pedro Pereira">
+
+  <link rel="icon" href="favicon.ico">
+
+  <meta property="og:title" content="Câmara de Comércio do Rio de Janeiro">
+  <meta property="og:description" content="Conheça a Câmara de Comércio do Rio de Janeiro: eventos, previsão do tempo e empresas associadas em destaque.">
+  <meta property="og:image" content="https://pedrothv.github.io/wdd231/camara/imagens/og-camara.png">
+  <meta property="og:url" content="https://pedrothv.github.io/wdd231/camara/index.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/maior.css">
+
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+  <script src="scripts/clima.js" defer></script>
+  <script src="scripts/destaques.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <img src="imagens/logo-camara.svg" alt="Logotipo da Câmara de Comércio do Rio de Janeiro" width="1" height="1">
+    <span>Câmara de Comércio do Rio de Janeiro</span>
+    <button id="botao-de-nav" class="hamburger" aria-label="Abrir menu de navegação"></button>
+  </header>
+
+  <nav id="barra-navegacao" class="navegacao">
+    <ul>
+      <li class="atual"><a href="index.html">Início</a></li>
+      <li><a href="diretorio.html">Diretório</a></li>
+      <li><a href="associacao.html">Associe-se</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <img src="imagens/hero-rio.svg" alt="Ilustração da orla do Rio de Janeiro com o Pão de Açúcar ao fundo" class="hero-imagem">
+      <div class="hero-conteudo">
+        <h1>Bem-vindo à Câmara de Comércio do Rio de Janeiro</h1>
+        <p>Conectamos empresas locais, promovemos o comércio da cidade e fortalecemos nossa comunidade.</p>
+        <a href="associacao.html" class="botao-cta">Associe-se à Câmara</a>
+      </div>
+    </section>
+
+    <section class="cartao">
+      <h2>Próximos Eventos</h2>
+      <div class="cartao-corpo">
+        <ul class="lista-eventos">
+          <li>
+            <span class="evento-data">22 Set</span>
+            <div>
+              <h3>Café da Manhã de Networking</h3>
+              <p>Encontro mensal entre associados no Centro do Rio.</p>
+            </div>
+          </li>
+          <li>
+            <span class="evento-data">05 Out</span>
+            <div>
+              <h3>Feira de Pequenos Negócios</h3>
+              <p>Exposição de produtos e serviços de empresas locais na Lagoa.</p>
+            </div>
+          </li>
+          <li>
+            <span class="evento-data">18 Out</span>
+            <div>
+              <h3>Workshop de Marketing Digital</h3>
+              <p>Palestra gratuita para associados sobre presença online.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cartao">
+      <h2>Previsão do Tempo</h2>
+      <div class="cartao-corpo">
+        <div id="clima-atual"></div>
+        <ul id="previsao-3-dias" class="previsao-lista"></ul>
+      </div>
+    </section>
+
+    <section class="cartao">
+      <h2>Empresas em Destaque</h2>
+      <div class="cartao-corpo">
+        <div id="destaques-membros" class="visualizacao-grade"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Câmara de Comércio do Rio de Janeiro</p>
+    <p>Av. Rio Branco, 1 - Centro, Rio de Janeiro - RJ</p>
+    <p>(21) 3000-0000</p>
+    <div class="footer-dev">
+      <p>&copy; <span id="anoAtual"></span> Pedro Pereira | WDD 231</p>
+      <p id="ultimaModificacao"></p>
+    </div>
+  </footer>
+
+</body>
+</html>
