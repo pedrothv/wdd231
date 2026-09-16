@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+main {
+  background-color: #fff;
+  max-width: 320px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#temp-atual {
+  font-weight: bold;
+}
+
+figure {
+  margin: 1rem 0 0;
+}
+
+figcaption {
+  text-transform: capitalize;
+  color: #555;
+}
+
+footer {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #777;
+}
