@@ -318,6 +318,10 @@ main > h1 {
   column-gap: 1rem;
 }
 
+.visualizacao-lista .cartao-membro img {
+  display: none;
+}
+
 .cartao-membro img {
   width: 48px;
   height: 48px;
