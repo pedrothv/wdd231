@@ -307,3 +307,54 @@ footer p {
   margin: 0.2rem 0;
   font-size: 0.85rem;
 }
+
+.curso-card {
+  cursor: pointer;
+}
+
+dialog {
+  border: none;
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  background-color: var(--branco);
+  box-shadow: var(--sombra);
+  width: 90%;
+  max-width: 480px;
+  position: relative;
+}
+
+::backdrop {
+  background-color: rgba(16, 36, 62, 0.6);
+}
+
+dialog h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+dialog h3 {
+  font-size: 1rem;
+  color: var(--neutro-texto-suave);
+  margin-bottom: 1rem;
+}
+
+dialog p {
+  margin: 0.4rem 0;
+}
+
+dialog button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--neutro-fundo);
+  color: var(--azul-marinho);
+  font-size: 1rem;
+}
+
+dialog button:hover {
+  background-color: var(--azul-claro);
+}

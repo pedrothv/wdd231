@@ -70,12 +70,13 @@ const cursos = [
 const listaCursos = document.querySelector('#lista-cursos');
 const totalCreditos = document.querySelector('#total-creditos');
 const botoesFiltro = document.querySelectorAll('.filtro-btn');
+const infosDoCurso = document.querySelector('#infos-do-curso');
 
 function renderizarCursos(listaFiltrada) {
   listaCursos.innerHTML = listaFiltrada
     .map(
       (curso) => `
-      <div class="curso-card ${curso.concluido ? 'concluido' : ''}">
+      <div class="curso-card ${curso.concluido ? 'concluido' : ''}" data-assunto="${curso.assunto}" data-numero="${curso.numero}">
         <div class="curso-titulo">
           <span>${curso.assunto} ${curso.numero}</span>
           ${curso.concluido ? '<span class="curso-selo">CONCLUÍDO</span>' : ''}
@@ -95,6 +96,40 @@ function filtrarCursos(categoria) {
   }
   return cursos.filter((curso) => curso.assunto === categoria);
 }
+
+function exibirInfosDoCurso(curso) {
+  infosDoCurso.innerHTML = `
+    <button id="fecharModal">✕</button>
+    <h2>${curso.assunto} ${curso.numero}</h2>
+    <h3>${curso.titulo}</h3>
+    <p><strong>Créditos</strong>: ${curso.creditos}</p>
+    <p><strong>Certificado</strong>: ${curso.certificado}</p>
+    <p>${curso.descricao}</p>
+    <p><strong>Tecnologias</strong>: ${curso.tecnologia.join(', ')}</p>
+  `;
+  infosDoCurso.showModal();
+
+  const fecharModal = document.querySelector('#fecharModal');
+  fecharModal.addEventListener('click', () => {
+    infosDoCurso.close();
+  });
+}
+
+listaCursos.addEventListener('click', (evento) => {
+  const cartaoClicado = evento.target.closest('.curso-card');
+  if (cartaoClicado) {
+    const assunto = cartaoClicado.dataset.assunto;
+    const numero = Number(cartaoClicado.dataset.numero);
+    const curso = cursos.find((c) => c.assunto === assunto && c.numero === numero);
+    exibirInfosDoCurso(curso);
+  }
+});
+
+infosDoCurso.addEventListener('click', (evento) => {
+  if (evento.target === infosDoCurso) {
+    infosDoCurso.close();
+  }
+});
 
 botoesFiltro.forEach((botao) => {
   botao.addEventListener('click', () => {
