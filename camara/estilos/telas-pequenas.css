@@ -382,3 +382,219 @@ footer p {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding-top: 0.75rem;
 }
+
+/* ---------- Formulário de Associação ---------- */
+
+.grade-associacao {
+  display: block;
+}
+
+.formulario-associacao {
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  box-shadow: 0 4px 14px var(--sombra-cor);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.formulario-associacao label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: var(--verde-escuro);
+}
+
+.formulario-associacao input[type="text"],
+.formulario-associacao input[type="email"],
+.formulario-associacao input[type="tel"],
+.formulario-associacao textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-family: var(--fonte-corpo);
+  border: 1px solid var(--borda);
+  border-radius: 6px;
+  color: var(--texto);
+}
+
+.formulario-associacao input:focus,
+.formulario-associacao textarea:focus {
+  outline: none;
+  border-color: var(--verde-profundo);
+}
+
+.formulario-associacao fieldset {
+  border: 1px solid var(--borda);
+  border-radius: 6px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.formulario-associacao legend {
+  font-weight: 700;
+  color: var(--verde-escuro);
+  padding: 0 0.4rem;
+}
+
+.formulario-associacao fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.formulario-associacao button[type="submit"] {
+  min-height: 44px;
+  padding: 0.7rem 1.6rem;
+  background-color: var(--verde-profundo);
+  color: var(--branco);
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.formulario-associacao button[type="submit"]:hover {
+  background-color: var(--verde-escuro);
+}
+
+/* ---------- Cartões de Nível de Associação ---------- */
+
+@keyframes entradaCartaoNivel {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.niveis-associacao {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.cartao-nivel {
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-left: 5px solid var(--verde-profundo);
+  border-radius: var(--raio);
+  box-shadow: 0 4px 14px var(--sombra-cor);
+  padding: 1rem;
+  animation: entradaCartaoNivel 0.5s ease both;
+}
+
+.cartao-nivel:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.cartao-nivel:nth-child(2) {
+  animation-delay: 0.12s;
+}
+
+.cartao-nivel:nth-child(3) {
+  animation-delay: 0.24s;
+}
+
+.cartao-nivel:nth-child(4) {
+  animation-delay: 0.36s;
+}
+
+.nivel-bronze {
+  border-left-color: #c08552;
+}
+
+.nivel-prata {
+  border-left-color: var(--prata);
+}
+
+.nivel-ouro {
+  border-left-color: var(--ouro);
+}
+
+.cartao-nivel h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.nivel-taxa {
+  color: var(--texto-suave);
+  margin: 0 0 0.6rem;
+}
+
+.cartao-nivel .saiba-mais {
+  color: var(--verde-profundo);
+  font-weight: 600;
+}
+
+/* ---------- Modal de nível (reaproveita dialog/backdrop já definidos) ---------- */
+
+#detalhes-associacao ul {
+  margin: 0.6rem 0 0;
+  padding-left: 1.2rem;
+}
+
+#detalhes-associacao li {
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- Página de agradecimento ---------- */
+
+.cartao-resultado {
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  box-shadow: 0 4px 14px var(--sombra-cor);
+  padding: 1.25rem;
+  margin-top: 1rem;
+}
+
+.cartao-resultado p {
+  margin: 0.4rem 0;
+}
+
+/* ---------- Estilo base do modal (dialog) ---------- */
+
+dialog {
+  border: none;
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  background-color: var(--branco);
+  box-shadow: 0 4px 14px var(--sombra-cor);
+  width: 90%;
+  max-width: 480px;
+  position: relative;
+}
+
+::backdrop {
+  background-color: rgba(10, 74, 55, 0.6);
+}
+
+dialog h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+dialog button#fecharModalNivel {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--areia);
+  color: var(--verde-escuro);
+  font-size: 1rem;
+}
+
+dialog button#fecharModalNivel:hover {
+  background-color: var(--borda);
+}

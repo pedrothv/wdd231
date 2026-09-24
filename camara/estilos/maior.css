@@ -72,4 +72,15 @@
   .lista-eventos li {
     flex-direction: column;
   }
+
+  .grade-associacao {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .formulario-associacao {
+    margin-bottom: 0;
+  }
 }
