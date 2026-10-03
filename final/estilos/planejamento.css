@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #faf3e7;
+  color: #2b2420;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Baloo 2", sans-serif;
+  color: #7a2e2e;
+}
+
+header {
+  background-color: #7a2e2e;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+ul {
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+.paleta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cor-exemplo {
+  width: 160px;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+}
+
+.cor-exemplo.cor-clara {
+  color: #2b2420;
+  border: 1px solid #ddd;
+}
+
+.cor-nome {
+  font-weight: 700;
+}
+
+.fonte-titulo-exemplo {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.3rem;
+  color: #7a2e2e;
+}
+
+.fonte-corpo-exemplo {
+ }
+
+figure {
+  margin: 0 0 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.75rem;
+  background-color: #ffffff;
+}
+
+figure img {
+  max-width: 100%;
+  display: block;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #5a4f45;
+}
