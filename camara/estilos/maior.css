@@ -83,4 +83,13 @@
   .formulario-associacao {
     margin-bottom: 0;
   }
+
+  .cartao-ponto figure img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .cartao-ponto figure img:hover {
+    transform: scale(1.06);
+    filter: brightness(1.08);
+  }
 }

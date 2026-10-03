@@ -1,0 +1,44 @@
+.pontos-interesse {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "c1"
+    "c2"
+    "c3"
+    "c4"
+    "c5"
+    "c6"
+    "c7"
+    "c8";
+}
+
+.ponto-1 { grid-area: c1; }
+.ponto-2 { grid-area: c2; }
+.ponto-3 { grid-area: c3; }
+.ponto-4 { grid-area: c4; }
+.ponto-5 { grid-area: c5; }
+.ponto-6 { grid-area: c6; }
+.ponto-7 { grid-area: c7; }
+.ponto-8 { grid-area: c8; }
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .pontos-interesse {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "c1 c1"
+      "c2 c3"
+      "c4 c5"
+      "c6 c7"
+      "c8 c8";
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .pontos-interesse {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "c1 c1 c2 c3"
+      "c4 c5 c6 c7"
+      "c8 c8 c8 c8";
+  }
+}
