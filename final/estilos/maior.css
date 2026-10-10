@@ -10,7 +10,7 @@
   }
 
   header span {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .hamburger {
@@ -20,6 +20,7 @@
   .navegacao {
     display: block;
     justify-self: end;
+    background-color: transparent;
   }
 
   .navegacao ul {
@@ -41,44 +42,22 @@
   }
 
   main > h1 {
-    font-size: 2.4rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.3rem;
   }
 
-  .grade-topo {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 1.5rem;
-    align-items: start;
+  .hero {
+    margin: -2rem -2rem 2rem;
   }
 
-  .grade-topo .cartao {
-    margin-bottom: 0;
-    height: 100%;
+  .hero-conteudo {
+    padding: 3.5rem 2rem;
   }
 
-  .foto-estudante {
-    padding: 2rem 1.1rem;
-  }
-
-  .avatar {
-    width: 180px;
-    height: 180px;
-  }
-
-  .filtros {
-    justify-content: center;
-  }
-
-  .filtro-btn {
-    flex: 0 1 160px;
-  }
-
-  .lista-cursos {
-    grid-template-columns: repeat(3, 1fr);
+  .hero-conteudo h1 {
+    font-size: 2.8rem;
   }
 
   footer {
-    padding: 2rem 2rem;
+    padding: 2rem;
   }
 }

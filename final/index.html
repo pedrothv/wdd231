@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cantinho dos Jogos | Início</title>
+  <meta name="description" content="Cantinho dos Jogos: um catálogo de jogos de tabuleiro com informações de jogadores, duração e categoria para ajudar você a escolher o jogo ideal.">
+  <meta name="author" content="Pedro Pereira">
+
+  <link rel="icon" href="favicon.ico">
+
+  <meta property="og:title" content="Cantinho dos Jogos | Início">
+  <meta property="og:description" content="Um catálogo de jogos de tabuleiro para encontrar o jogo certo para cada ocasião.">
+  <meta property="og:image" content="https://pedrothv.github.io/wdd231/final/imagens/og-cantinho.png">
+  <meta property="og:url" content="https://pedrothv.github.io/wdd231/final/index.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/maior.css">
+
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+  <script type="module" src="scripts/destaques.mjs"></script>
+</head>
+<body>
+
+  <header>
+    <img src="imagens/logo-cantinho.svg" alt="Logotipo do Cantinho dos Jogos" width="32" height="32">
+    <span>Cantinho dos Jogos</span>
+    <button id="botao-de-nav" class="hamburger" aria-label="Abrir menu de navegação"></button>
+  </header>
+
+  <nav id="barra-navegacao" class="navegacao">
+    <ul>
+      <li class="atual"><a href="index.html">Início</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-conteudo">
+        <h1>Encontre o jogo de tabuleiro certo para cada ocasião</h1>
+        <p>Jogos de tabuleiro reúnem família e amigos em volta da mesa. Aqui você descobre quantos jogadores cada jogo aceita, quanto tempo dura uma partida e qual categoria combina mais com você.</p>
+        <a href="catalogo.html" class="botao-cta">Ver o catálogo completo</a>
+      </div>
+    </section>
+
+    <section class="secao-destaque">
+      <h2>Jogos em destaque</h2>
+      <div id="jogos-destaque" class="grade-jogos"></div>
+    </section>
+
+    <section class="secao-destaque">
+      <h2>Tem uma sugestão?</h2>
+      <p>Conhece um jogo que deveria estar no catálogo? Mande sua sugestão ou dúvida pelo formulário de contato.</p>
+      <a href="contato.html" class="botao-cta">Falar com a gente</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Cantinho dos Jogos</p>
+    <p><a href="atribuicoes.html">Atribuições</a> | <a href="#">Vídeo de demonstração</a></p>
+    <div class="footer-dev">
+      <p>&copy; <span id="anoAtual"></span> Pedro Pereira | WDD 231 | Rio de Janeiro, Brasil</p>
+      <p id="ultimaModificacao"></p>
+    </div>
+  </footer>
+
+</body>
+</html>

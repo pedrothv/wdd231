@@ -1,0 +1,154 @@
+{
+  "jogos": [
+    {
+      "id": "catan",
+      "nome": "Catan",
+      "categoria": "estrategia",
+      "jogadores": "3-4",
+      "duracao": 90,
+      "idadeMinima": 10,
+      "descricao": "Negocie e construa colônias numa ilha dividida em recursos como madeira, trigo e minério.",
+      "imagem": "catan.jpg"
+    },
+    {
+      "id": "carcassonne",
+      "nome": "Carcassonne",
+      "categoria": "estrategia",
+      "jogadores": "2-5",
+      "duracao": 45,
+      "idadeMinima": 8,
+      "descricao": "Monte o mapa de uma região medieval peça por peça e posicione seus seguidores com sabedoria.",
+      "imagem": "carcassonne.jpg"
+    },
+    {
+      "id": "banco-imobiliario",
+      "nome": "Banco Imobiliário",
+      "categoria": "familia",
+      "jogadores": "2-6",
+      "duracao": 120,
+      "idadeMinima": 8,
+      "descricao": "Compre propriedades, construa casas e hotéis e leve seus adversários à falência.",
+      "imagem": "banco-imobiliario.jpg"
+    },
+    {
+      "id": "war",
+      "nome": "War",
+      "categoria": "estrategia",
+      "jogadores": "2-6",
+      "duracao": 120,
+      "idadeMinima": 10,
+      "descricao": "Clássico jogo de conquista territorial e estratégia militar pelo mapa-múndi.",
+      "imagem": "war.jpg"
+    },
+    {
+      "id": "uno",
+      "nome": "Uno",
+      "categoria": "familia",
+      "jogadores": "2-10",
+      "duracao": 20,
+      "idadeMinima": 7,
+      "descricao": "Combine cores e números e seja o primeiro a ficar sem cartas na mão.",
+      "imagem": "uno.jpg"
+    },
+    {
+      "id": "perfil",
+      "nome": "Perfil",
+      "categoria": "party",
+      "jogadores": "4-8",
+      "duracao": 60,
+      "idadeMinima": 12,
+      "descricao": "Dê dicas sobre pessoas, lugares e coisas para que seu time adivinhe antes do tempo acabar.",
+      "imagem": "perfil.jpg"
+    },
+    {
+      "id": "detetive",
+      "nome": "Detetive",
+      "categoria": "familia",
+      "jogadores": "3-6",
+      "duracao": 45,
+      "idadeMinima": 9,
+      "descricao": "Descubra quem cometeu o crime, com qual arma e em qual cômodo da mansão.",
+      "imagem": "detetive.jpg"
+    },
+    {
+      "id": "imagem-e-acao",
+      "nome": "Imagem & Ação",
+      "categoria": "party",
+      "jogadores": "4-12",
+      "duracao": 30,
+      "idadeMinima": 8,
+      "descricao": "Desenhe ou mímica palavras-chave para que seu time acerte antes do cronômetro zerar.",
+      "imagem": "imagem-e-acao.jpg"
+    },
+    {
+      "id": "dixit",
+      "nome": "Dixit",
+      "categoria": "party",
+      "jogadores": "3-6",
+      "duracao": 30,
+      "idadeMinima": 8,
+      "descricao": "Interprete ilustrações surreais a partir de uma única palavra ou frase enigmática.",
+      "imagem": "dixit.jpg"
+    },
+    {
+      "id": "ticket-to-ride",
+      "nome": "Ticket to Ride",
+      "categoria": "estrategia",
+      "jogadores": "2-5",
+      "duracao": 60,
+      "idadeMinima": 8,
+      "descricao": "Conecte cidades com suas rotas de trem e complete seus bilhetes de destino.",
+      "imagem": "ticket-to-ride.jpg"
+    },
+    {
+      "id": "codigo-secreto",
+      "nome": "Código Secreto",
+      "categoria": "party",
+      "jogadores": "4-8",
+      "duracao": 20,
+      "idadeMinima": 10,
+      "descricao": "Dê pistas de uma palavra só para que seu time identifique os agentes certos no tabuleiro.",
+      "imagem": "codigo-secreto.jpg"
+    },
+    {
+      "id": "jogo-da-vida",
+      "nome": "Jogo da Vida",
+      "categoria": "familia",
+      "jogadores": "2-6",
+      "duracao": 60,
+      "idadeMinima": 8,
+      "descricao": "Gire a roleta e tome decisões de carreira, família e finanças ao longo da vida.",
+      "imagem": "jogo-da-vida.jpg"
+    },
+    {
+      "id": "xadrez",
+      "nome": "Xadrez",
+      "categoria": "classico",
+      "jogadores": "2",
+      "duracao": 40,
+      "idadeMinima": 6,
+      "descricao": "O clássico jogo de estratégia pura entre dois exércitos de 16 peças cada.",
+      "imagem": "xadrez.jpg"
+    },
+    {
+      "id": "domino",
+      "nome": "Dominó",
+      "categoria": "classico",
+      "jogadores": "2-4",
+      "duracao": 20,
+      "idadeMinima": 6,
+      "descricao": "Encaixe as peças pelos números correspondentes e seja o primeiro a ficar sem peças.",
+      "imagem": "domino.jpg"
+    },
+    {
+      "id": "pandemic",
+      "nome": "Pandemic",
+      "categoria": "cooperativo",
+      "jogadores": "2-4",
+      "duracao": 60,
+      "idadeMinima": 10,
+      "descricao": "Trabalhe em equipe contra o próprio jogo para conter quatro surtos de doença pelo mundo.",
+      "imagem": "pandemic.jpg"
+    }
+  ]
+}

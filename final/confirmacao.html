@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensagem Enviada | Cantinho dos Jogos</title>
+  <meta name="description" content="Confirmação de envio da sua mensagem ao Cantinho dos Jogos.">
+  <meta name="author" content="Pedro Pereira">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/maior.css">
+
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+  <script type="module" src="scripts/confirmacao.mjs"></script>
+</head>
+<body>
+
+  <header>
+    <img src="imagens/logo-cantinho.svg" alt="Logotipo do Cantinho dos Jogos" width="32" height="32">
+    <span>Cantinho dos Jogos</span>
+    <button id="botao-de-nav" class="hamburger" aria-label="Abrir menu de navegação"></button>
+  </header>
+
+  <nav id="barra-navegacao" class="navegacao">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li class="atual"><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Obrigado pelo contato!</h1>
+    <p>Recebemos sua mensagem com os dados abaixo.</p>
+
+    <div id="resultados-contato" class="cartao-resultado"></div>
+  </main>
+
+  <footer>
+    <p>Cantinho dos Jogos</p>
+    <p><a href="#">Vídeo de demonstração</a></p>
+    <div class="footer-dev">
+      <p>&copy; <span id="anoAtual"></span> Pedro Pereira | WDD 231 | Rio de Janeiro, Brasil</p>
+      <p id="ultimaModificacao"></p>
+    </div>
+  </footer>
+
+</body>
+</html>

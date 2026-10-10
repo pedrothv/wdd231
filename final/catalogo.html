@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Jogos | Cantinho dos Jogos</title>
+  <meta name="description" content="Catálogo com 15 jogos de tabuleiro: filtre por categoria, veja número de jogadores e duração e salve seus favoritos.">
+  <meta name="author" content="Pedro Pereira">
+
+  <link rel="icon" href="favicon.ico">
+
+  <meta property="og:title" content="Catálogo de Jogos | Cantinho dos Jogos">
+  <meta property="og:description" content="Explore 15 jogos de tabuleiro por categoria, jogadores e duração.">
+  <meta property="og:image" content="https://pedrothv.github.io/wdd231/final/imagens/og-cantinho.png">
+  <meta property="og:url" content="https://pedrothv.github.io/wdd231/final/catalogo.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/maior.css">
+
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+  <script type="module" src="scripts/catalogo.mjs"></script>
+</head>
+<body>
+
+  <header>
+    <img src="imagens/logo-cantinho.svg" alt="Logotipo do Cantinho dos Jogos" width="32" height="32">
+    <span>Cantinho dos Jogos</span>
+    <button id="botao-de-nav" class="hamburger" aria-label="Abrir menu de navegação"></button>
+  </header>
+
+  <nav id="barra-navegacao" class="navegacao">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li class="atual"><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Catálogo de Jogos</h1>
+
+    <div class="filtros">
+      <button class="filtro-categoria ativo" data-categoria="todos">Todos</button>
+      <button class="filtro-categoria" data-categoria="estrategia">Estratégia</button>
+      <button class="filtro-categoria" data-categoria="familia">Família</button>
+      <button class="filtro-categoria" data-categoria="party">Party</button>
+      <button class="filtro-categoria" data-categoria="classico">Clássico</button>
+      <button class="filtro-categoria" data-categoria="cooperativo">Cooperativo</button>
+      <button class="filtro-categoria" data-categoria="favoritos">Favoritos</button>
+    </div>
+
+    <p id="total-jogos"></p>
+
+    <div id="galeria-jogos" class="grade-jogos"></div>
+  </main>
+
+  <footer>
+    <p>Cantinho dos Jogos</p>
+    <p><a href="#">Vídeo de demonstração</a></p>
+    <div class="footer-dev">
+      <p>&copy; <span id="anoAtual"></span> Pedro Pereira | WDD 231 | Rio de Janeiro, Brasil</p>
+      <p id="ultimaModificacao"></p>
+    </div>
+  </footer>
+
+  <dialog id="detalhes-jogo"></dialog>
+
+</body>
+</html>

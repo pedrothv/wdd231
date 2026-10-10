@@ -1,0 +1,420 @@
+:root {
+  --grena: #7a2e2e;
+  --grena-escuro: #5e2222;
+  --mostarda: #d9a441;
+  --creme: #faf3e7;
+  --marrom-escuro: #2b2420;
+  --texto-suave: #5a4f45;
+  --branco: #ffffff;
+  --borda: #e6d9c3;
+  --sombra-cor: rgba(43, 36, 32, 0.12);
+
+  --fonte-titulo: "Baloo 2", sans-serif;
+  --fonte-corpo: "Nunito Sans", sans-serif;
+
+  --raio: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte-corpo);
+  color: var(--marrom-escuro);
+  background-color: var(--creme);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--grena);
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 32px 1fr 44px;
+  align-items: center;
+  column-gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--grena);
+}
+
+header img {
+  width: 32px;
+  height: 32px;
+}
+
+header span {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--creme);
+}
+
+.hamburger {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-color: transparent;
+  color: var(--creme);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.exibir::before {
+  content: "\00D7";
+}
+
+.navegacao {
+  display: none;
+  background-color: var(--grena-escuro);
+}
+
+.navegacao.exibir {
+  display: block;
+}
+
+.navegacao ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacao li {
+  border-top: 1px solid var(--grena);
+}
+
+.navegacao a {
+  display: block;
+  padding: 0.9rem 1rem;
+  color: var(--creme);
+  font-weight: 600;
+  text-decoration: none;
+  min-height: 44px;
+}
+
+.navegacao li.atual a {
+  background-color: var(--mostarda);
+  color: var(--marrom-escuro);
+}
+
+.navegacao a:hover,
+.navegacao a:focus-visible {
+  background-color: var(--mostarda);
+  color: var(--marrom-escuro);
+}
+
+main {
+  padding: 1.25rem 1rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+main > h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero {
+  margin: -1.25rem -1rem 1.5rem;
+}
+
+.hero-conteudo {
+  padding: 2rem 1rem;
+  background-color: var(--grena);
+  color: var(--creme);
+  text-align: center;
+}
+
+.hero-conteudo h1 {
+  color: var(--creme);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-conteudo p {
+  margin: 0 0 1.2rem;
+}
+
+.botao-cta {
+  display: inline-block;
+  background-color: var(--mostarda);
+  color: var(--marrom-escuro);
+  font-weight: 700;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  min-height: 44px;
+}
+
+.secao-destaque {
+  margin-bottom: 2rem;
+}
+
+.secao-destaque h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.grade-jogos {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.cartao-jogo {
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  box-shadow: 0 4px 14px var(--sombra-cor);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.cartao-jogo img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.4rem;
+}
+
+.cartao-jogo h2,
+.cartao-jogo h3 {
+  font-size: 1.15rem;
+}
+
+.jogo-info {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+.cartao-acoes {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.cartao-acoes button {
+  min-height: 44px;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.botao-detalhes {
+  background-color: var(--grena);
+  color: var(--creme);
+  border: none;
+}
+
+.botao-detalhes:hover {
+  background-color: var(--grena-escuro);
+}
+
+.botao-favorito {
+  background-color: var(--branco);
+  color: var(--grena);
+  border: 1px solid var(--grena);
+}
+
+.botao-favorito.favoritado {
+  background-color: var(--mostarda);
+  color: var(--marrom-escuro);
+  border-color: var(--mostarda);
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.filtro-categoria {
+  min-height: 44px;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--grena);
+  border-radius: 999px;
+  background-color: var(--branco);
+  color: var(--grena);
+  font-weight: 600;
+}
+
+.filtro-categoria.ativo {
+  background-color: var(--grena);
+  color: var(--creme);
+}
+
+#total-jogos {
+  color: var(--texto-suave);
+  margin: 0 0 1rem;
+}
+
+.formulario-contato {
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  box-shadow: 0 4px 14px var(--sombra-cor);
+  padding: 1.25rem;
+  max-width: 560px;
+}
+
+.formulario-contato label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--grena);
+}
+
+.formulario-contato input[type="text"],
+.formulario-contato input[type="email"],
+.formulario-contato select,
+.formulario-contato textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-family: var(--fonte-corpo);
+  border: 1px solid var(--borda);
+  border-radius: 6px;
+  color: var(--marrom-escuro);
+  background-color: var(--branco);
+}
+
+.formulario-contato input:focus,
+.formulario-contato select:focus,
+.formulario-contato textarea:focus {
+  outline: 2px solid var(--mostarda);
+  border-color: var(--grena);
+}
+
+.formulario-contato button[type="submit"] {
+  min-height: 44px;
+  padding: 0.7rem 1.6rem;
+  background-color: var(--grena);
+  color: var(--creme);
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.formulario-contato button[type="submit"]:hover {
+  background-color: var(--grena-escuro);
+}
+
+.cartao-resultado {
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  box-shadow: 0 4px 14px var(--sombra-cor);
+  padding: 1.25rem;
+  margin-top: 1rem;
+  max-width: 560px;
+}
+
+.cartao-resultado p {
+  margin: 0.4rem 0;
+}
+
+dialog {
+  border: none;
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  background-color: var(--branco);
+  box-shadow: 0 4px 14px var(--sombra-cor);
+  width: 90%;
+  max-width: 460px;
+  position: relative;
+}
+
+::backdrop {
+  background-color: rgba(43, 36, 32, 0.6);
+}
+
+dialog h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+dialog p {
+  margin: 0.4rem 0;
+}
+
+dialog button[id^="fecharModal"] {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--creme);
+  color: var(--grena);
+  font-size: 1rem;
+}
+
+.lista-atribuicoes {
+  padding-left: 1.2rem;
+}
+
+.lista-atribuicoes li {
+  margin-bottom: 0.6rem;
+}
+
+footer {
+  background-color: var(--grena);
+  color: var(--creme);
+  padding: 1.75rem 1rem 1.5rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--creme);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.footer-dev {
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--grena-escuro);
+  padding-top: 0.75rem;
+}

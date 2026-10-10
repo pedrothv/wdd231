@@ -81,7 +81,9 @@ li {
 }
 
 .fonte-corpo-exemplo {
- }
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.05rem;
+}
 
 figure {
   margin: 0 0 1.5rem;
