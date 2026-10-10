@@ -190,6 +190,11 @@ main > h1 {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.grade-destaques {
+  display: grid;
+  gap: 1rem;
+}
+
 .cartao-jogo {
   background-color: var(--branco);
   border: 1px solid var(--borda);
